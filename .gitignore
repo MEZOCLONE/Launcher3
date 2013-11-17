@@ -11,3 +11,4 @@ libs/
 .project
 .classpath
 project.properties
+lint.xml
