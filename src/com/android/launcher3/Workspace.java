@@ -4416,7 +4416,7 @@ public class Workspace extends SmoothPagedView
     }
 
     void moveToDefaultScreen(boolean animate) {
-        moveToScreen(mDefaultPage, animate);
+        moveToScreen(getCenterScreen(), animate);
     }
 
     void moveToCustomContentScreen(boolean animate) {
@@ -4473,5 +4473,18 @@ public class Workspace extends SmoothPagedView
 
     public void getLocationInDragLayer(int[] loc) {
         mLauncher.getDragLayer().getLocationInDragLayer(this, loc);
+    }
+    
+    public void screensAdded() {
+    	moveToScreen(getCenterScreen(), false);
+    }
+    
+    private int getCenterScreen() {
+    	int count = getPageCount() - 1;
+    	
+    	if (count > 0)
+    		return (int) Math.floor(count / 2);
+    	
+    	return 0;
     }
 }

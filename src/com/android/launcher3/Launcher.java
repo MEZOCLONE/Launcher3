@@ -3607,6 +3607,8 @@ public class Launcher extends Activity
         for (int i = 0; i < count; i++) {
             mWorkspace.insertNewWorkspaceScreenBeforeEmptyScreen(orderedScreenIds.get(i));
         }
+        // Notify workspace that all the screens have been added.
+        mWorkspace.screensAdded();
     }
 
     private boolean shouldShowWeightWatcher() {
