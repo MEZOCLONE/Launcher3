@@ -1,0 +1,13 @@
+db_files
+
+.settings/
+assets/
+bin/
+gen/
+libs/
+
+*.launch
+
+.project
+.classpath
+project.properties
