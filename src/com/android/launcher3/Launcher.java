@@ -113,6 +113,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import nl.ndsc.launcher3.centered.R;
 
 /**
  * Default launcher application.

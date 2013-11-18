@@ -52,6 +52,7 @@ import android.util.Xml;
 import com.android.launcher3.LauncherSettings.Favorites;
 import com.android.launcher3.config.ProviderConfig;
 
+import nl.ndsc.launcher3.centered.R;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 

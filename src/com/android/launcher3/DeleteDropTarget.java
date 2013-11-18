@@ -39,6 +39,7 @@ import android.view.animation.LinearInterpolator;
 
 import java.util.List;
 import java.util.Set;
+import nl.ndsc.launcher3.centered.R;
 
 public class DeleteDropTarget extends ButtonDropTarget {
     private static int DELETE_ANIMATION_DURATION = 285;

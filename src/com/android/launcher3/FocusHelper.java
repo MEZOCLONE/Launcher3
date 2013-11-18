@@ -28,6 +28,7 @@ import android.widget.TabWidget;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import nl.ndsc.launcher3.centered.R;
 
 /**
  * A keyboard listener we set on all the workspace icons.

@@ -39,6 +39,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import nl.ndsc.launcher3.centered.R;
 
 /**
  * Various utilities shared amongst the Launcher's classes.

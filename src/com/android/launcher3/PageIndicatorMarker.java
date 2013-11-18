@@ -26,7 +26,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.FrameLayout;
-import com.android.launcher3.R;
+import nl.ndsc.launcher3.centered.R;
 
 public class PageIndicatorMarker extends FrameLayout {
     @SuppressWarnings("unused")

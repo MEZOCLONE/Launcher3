@@ -70,6 +70,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import nl.ndsc.launcher3.centered.R;
 
 /**
  * The workspace is a wide area with a wallpaper and a finite number of pages.

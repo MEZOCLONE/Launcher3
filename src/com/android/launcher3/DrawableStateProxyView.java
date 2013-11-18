@@ -23,7 +23,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.android.launcher3.R;
+import nl.ndsc.launcher3.centered.R;
 
 public class DrawableStateProxyView extends LinearLayout {
 

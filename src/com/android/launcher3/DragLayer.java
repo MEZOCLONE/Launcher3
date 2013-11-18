@@ -37,6 +37,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import nl.ndsc.launcher3.centered.R;
 
 /**
  * A ViewGroup that coordinates dragging across its descendants

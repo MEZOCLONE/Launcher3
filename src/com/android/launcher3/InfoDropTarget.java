@@ -25,6 +25,7 @@ import android.graphics.drawable.TransitionDrawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+import nl.ndsc.launcher3.centered.R;
 
 public class InfoDropTarget extends ButtonDropTarget {
 

@@ -24,6 +24,7 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.widget.ImageView;
+import nl.ndsc.launcher3.centered.R;
 
 public class HolographicViewHelper {
 

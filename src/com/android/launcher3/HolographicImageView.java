@@ -25,6 +25,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import nl.ndsc.launcher3.centered.R;
 
 public class HolographicImageView extends ImageView {
 

@@ -34,6 +34,7 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import nl.ndsc.launcher3.centered.R;
 
 public class Cling extends FrameLayout implements Insettable, View.OnClickListener,
         View.OnLongClickListener, View.OnTouchListener {

@@ -31,6 +31,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import nl.ndsc.launcher3.centered.R;
 
 public class Hotseat extends FrameLayout {
     private static final String TAG = "Hotseat";

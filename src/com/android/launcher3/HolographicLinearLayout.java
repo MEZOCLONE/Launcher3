@@ -26,6 +26,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import nl.ndsc.launcher3.centered.R;
 
 public class HolographicLinearLayout extends LinearLayout {
     private final HolographicViewHelper mHolographicHelper;

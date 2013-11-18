@@ -25,6 +25,7 @@ import android.view.ViewGroup;
 import android.widget.RemoteViews;
 
 import com.android.launcher3.DragLayer.TouchCompleteListener;
+import nl.ndsc.launcher3.centered.R;
 
 /**
  * {@inheritDoc}

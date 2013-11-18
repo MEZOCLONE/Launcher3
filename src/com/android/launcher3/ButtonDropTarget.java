@@ -25,7 +25,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
-import com.android.launcher3.R;
+import nl.ndsc.launcher3.centered.R;
 
 
 /**

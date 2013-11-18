@@ -34,6 +34,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import nl.ndsc.launcher3.centered.R;
 
 public class ThirdPartyWallpaperPickerListAdapter extends BaseAdapter implements ListAdapter {
     private static final String LOG_TAG = "LiveWallpaperListAdapter";

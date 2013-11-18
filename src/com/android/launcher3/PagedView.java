@@ -54,6 +54,7 @@ import android.view.animation.LinearInterpolator;
 import android.widget.Scroller;
 
 import java.util.ArrayList;
+import nl.ndsc.launcher3.centered.R;
 
 interface Page {
     public int getPageChildCount();

@@ -35,6 +35,7 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
+import nl.ndsc.launcher3.centered.R;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;

@@ -27,6 +27,7 @@ import android.util.Log;
 import android.view.Display;
 
 import java.lang.ref.WeakReference;
+import nl.ndsc.launcher3.centered.R;
 
 public class LauncherAppState {
     private static final String TAG = "LauncherAppState";

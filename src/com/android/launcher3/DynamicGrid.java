@@ -35,6 +35,7 @@ import android.widget.FrameLayout;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import nl.ndsc.launcher3.centered.R;
 
 
 class DeviceProfileQuery {

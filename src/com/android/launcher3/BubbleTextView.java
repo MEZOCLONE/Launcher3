@@ -29,6 +29,7 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.widget.TextView;
+import nl.ndsc.launcher3.centered.R;
 
 /**
  * TextView that draws a bubble behind the text. We cannot use a LineBackgroundSpan

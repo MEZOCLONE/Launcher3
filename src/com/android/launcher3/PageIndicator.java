@@ -31,7 +31,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import com.android.launcher3.R;
+import nl.ndsc.launcher3.centered.R;
 
 import java.util.ArrayList;
 

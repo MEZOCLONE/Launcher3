@@ -33,6 +33,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import nl.ndsc.launcher3.centered.R;
 import org.json.*;
 
 public class InstallShortcutReceiver extends BroadcastReceiver {
