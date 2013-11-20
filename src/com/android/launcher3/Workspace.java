@@ -1943,6 +1943,8 @@ public class Workspace extends SmoothPagedView
                 ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO_HIDE_DESCENDANTS;
         setImportantForAccessibility(accessible);
     }
+    
+    boolean enableQsb = false;
 
     Animator getChangeStateAnimation(final State state, boolean animated, int delay, int snapPage) {
         if (mState == state) {
@@ -2105,7 +2107,8 @@ public class Workspace extends SmoothPagedView
 
             anim.play(overviewPanelAlpha);
             anim.play(hotseatAlpha);
-            anim.play(searchBarAlpha);
+            if (enableQsb)
+            	anim.play(searchBarAlpha);
             anim.play(pageIndicatorAlpha);
             anim.setStartDelay(delay);
         } else {
@@ -2117,7 +2120,9 @@ public class Workspace extends SmoothPagedView
                 getPageIndicator().setAlpha(finalHotseatAndPageIndicatorAlpha);
                 AlphaUpdateListener.updateVisibility(getPageIndicator());
             }
-            searchBar.setAlpha(finalSearchBarAlpha);
+            if (enableQsb)
+            	searchBar.setAlpha(finalSearchBarAlpha);
+            
             AlphaUpdateListener.updateVisibility(searchBar);
             updateCustomContentVisibility();
             setScaleX(mNewScale);

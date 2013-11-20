@@ -945,7 +945,7 @@ public class Launcher extends Activity
             addCustomContentToLeft();
         }
     }
-
+    boolean enableQsb = false;
     QSBScroller mQsbScroller = new QSBScroller() {
         int scrollY = 0;
 
@@ -953,9 +953,9 @@ public class Launcher extends Activity
         public void setScrollY(int scroll) {
             scrollY = scroll;
 
-            if (mWorkspace.isOnOrMovingToCustomContent()) {
-                mSearchDropTargetBar.setTranslationY(- scrollY);
-                getQsbBar().setTranslationY(-scrollY);
+            if (mWorkspace.isOnOrMovingToCustomContent() && enableQsb) {
+            	mSearchDropTargetBar.setTranslationY(-scrollY);
+            	getQsbBar().setTranslationY(-scrollY);
             }
         }
     };

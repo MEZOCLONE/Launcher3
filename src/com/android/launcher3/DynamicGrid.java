@@ -66,6 +66,8 @@ class DeviceProfile {
     boolean isTablet;
     boolean isLargeTablet;
     boolean transposeLayoutWithOrientation;
+    
+    boolean enableQsb = false;
 
     int desiredWorkspaceLeftRightMarginPx;
     int edgeMarginPx;
@@ -300,10 +302,15 @@ class DeviceProfile {
 
     Rect getWorkspacePadding(int orientation) {
         Rect padding = new Rect();
+        
+        int qsbSpaceHeightPx = searchBarSpaceHeightPx;
+        if (!enableQsb)
+        	qsbSpaceHeightPx = 0;
+        
         if (orientation == CellLayout.LANDSCAPE &&
                 transposeLayoutWithOrientation) {
             // Pad the left and right of the workspace with search/hotseat bar sizes
-            padding.set(searchBarSpaceHeightPx, edgeMarginPx,
+            padding.set(qsbSpaceHeightPx, edgeMarginPx,
                     hotseatBarHeightPx, edgeMarginPx);
         } else {
             if (isTablet()) {
@@ -317,13 +324,13 @@ class DeviceProfile {
                 int gap = (int) ((width - 2 * edgeMarginPx -
                         (numColumns * cellWidthPx)) / (2 * (numColumns + 1)));
                 padding.set(edgeMarginPx + gap,
-                        searchBarSpaceHeightPx,
+                		qsbSpaceHeightPx,
                         edgeMarginPx + gap,
                         hotseatBarHeightPx + pageIndicatorHeightPx);
             } else {
                 // Pad the top and bottom of the workspace with search/hotseat bar sizes
                 padding.set(desiredWorkspaceLeftRightMarginPx - defaultWidgetPadding.left,
-                        searchBarSpaceHeightPx,
+                		qsbSpaceHeightPx,
                         desiredWorkspaceLeftRightMarginPx - defaultWidgetPadding.right,
                         hotseatBarHeightPx + pageIndicatorHeightPx);
             }
@@ -397,7 +404,9 @@ class DeviceProfile {
         vglp.width = LayoutParams.MATCH_PARENT;
         vglp.height = LayoutParams.MATCH_PARENT;
         qsbBar.setLayoutParams(vglp);
-
+        if (!enableQsb)
+        	qsbBar.setVisibility(View.GONE);
+        
         // Layout the voice proxy
         View voiceButtonProxy = launcher.findViewById(R.id.voice_button_proxy);
         if (voiceButtonProxy != null) {
